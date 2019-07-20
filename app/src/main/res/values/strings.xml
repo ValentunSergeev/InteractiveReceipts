@@ -1,8 +1,10 @@
 <resources>
-    <string name="app_name">InteractiveReceipts</string>
+    <string name="app_name">Interactive Recipes</string>
 
-    <string name="error_unable_to_connect">Отсутствует интернет-соединение</string>
-    <string name="error_server_unavailable">Сервер недоступен, повторите попытку позже</string>
-    <string name="page_not_found">Страница не найдена</string>
+    <string name="error_unable_to_connect">No internet connection</string>
+    <string name="error_server_unavailable">Server is unavailable, try again later</string>
+    <string name="error_page_not_found">Page not found</string>
 
+    <string name="navigation_recipes">recipes</string>
+    <string name="navigation_create">Create recipe</string>
 </resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigationRecipes"
+          android:title="@string/navigation_recipes"
+          android:icon="@drawable/ic_recipes" />
+
+    <item android:icon="@drawable/ic_add"
+          android:title="@string/navigation_create"
+          android:id="@+id/navigationCreate" />
+</menu>
