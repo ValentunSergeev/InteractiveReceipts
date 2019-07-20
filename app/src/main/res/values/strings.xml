@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InteractiveReceipts</string>
+
+    <string name="error_unable_to_connect">Отсутствует интернет-соединение</string>
+    <string name="error_server_unavailable">Сервер недоступен, повторите попытку позже</string>
+    <string name="page_not_found">Страница не найдена</string>
+
+</resources>
