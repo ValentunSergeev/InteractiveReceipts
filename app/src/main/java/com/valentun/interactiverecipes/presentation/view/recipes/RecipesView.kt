@@ -1,7 +1,8 @@
 package com.valentun.interactiverecipes.presentation.view.recipes
 
-import com.arellomobile.mvp.MvpView
+import com.valentun.interactiverecipes.data.pojo.RecipeOverview
+import com.valentun.interactiverecipes.presentation.view.ProgressView
 
-interface RecipesView : MvpView {
-
+interface RecipesView : ProgressView {
+    fun showRecipes(recipes: List<RecipeOverview>)
 }

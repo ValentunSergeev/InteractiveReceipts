@@ -7,4 +7,7 @@
 
     <string name="navigation_recipes">recipes</string>
     <string name="navigation_create">Create recipe</string>
+
+    <string name="section_next">Next</string>
+    <string name="section_finish">Finish</string>
 </resources>

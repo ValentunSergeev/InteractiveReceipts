@@ -12,12 +12,16 @@ import com.valentun.interactiverecipes.Screens
 import com.valentun.interactiverecipes.presentation.presenter.main.MainPresenter
 import com.valentun.interactiverecipes.presentation.view.mian.MainView
 import com.valentun.interactiverecipes.ui.activity.BaseActivity
+import com.valentun.interactiverecipes.ui.activity.cooking.CookingActivity
+import com.valentun.interactiverecipes.ui.activity.cooking.EXTRA_ID
 import com.valentun.interactiverecipes.ui.fragment.createRecipe.CreateRecipeFragment
 import com.valentun.interactiverecipes.ui.fragment.recipes.RecipesFragment
 import com.valentun.interactiverecipes.ui.navigation.OnBackListener
 import com.valentun.interactiverecipes.ui.navigation.TabHolder
 import com.valentun.interactiverecipes.ui.navigation.navigator.SupportAppNavigator
 import kotlinx.android.synthetic.main.activity_main.*
+import okhttp3.internal.Internal
+import org.jetbrains.anko.intentFor
 import ru.terrakok.cicerone.Navigator
 import java.lang.IllegalArgumentException
 
@@ -64,7 +68,11 @@ class MainActivity : BaseActivity(), MainView, TabHolder, BottomNavigationView.O
     }
 
     class MainNavigator(activity: AppCompatActivity) : SupportAppNavigator(activity, R.id.mainContainer) {
-        override fun createActivityIntent(context: Context, screenKey: String, data: Any?) = null
+        override fun createActivityIntent(context: Context, screenKey: String, data: Any?) =
+            when(screenKey) {
+                Screens.COOKING -> context.intentFor<CookingActivity>(EXTRA_ID to data)
+                else -> null
+            }
 
         override fun createFragment(screenKey: String, data: Any?): Fragment =
                 when(screenKey) {

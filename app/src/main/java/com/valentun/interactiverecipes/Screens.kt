@@ -2,7 +2,7 @@ package com.valentun.interactiverecipes
 
 object Screens {
     const val RECIPES = "RECIPES"
-    const val DETAIL = "DETAIL"
+    const val COOKING = "COOKING"
     const val SECTION = "SECTION"
 
 

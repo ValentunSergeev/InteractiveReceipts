@@ -2,6 +2,7 @@ package com.valentun.interactiverecipes.ui.fragment
 
 import android.os.Bundle
 import android.view.View
+import androidx.annotation.CallSuper
 import com.google.android.material.snackbar.Snackbar
 import com.valentun.interactiverecipes.presentation.view.BaseView
 import com.valentun.interactiverecipes.ui.mvp.MvpAppCompatFragment
@@ -39,6 +40,7 @@ abstract class BaseFragment : MvpAppCompatFragment(), BaseView {
         }
     }
 
+    @CallSuper
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

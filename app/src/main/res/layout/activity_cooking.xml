@@ -2,14 +2,21 @@
 <com.valentun.interactiverecipes.ui.view.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/cookingContainer"
     android:layout_height="match_parent"
-    android:id="@+id/recipesContainer"
-    tools:context=".ui.fragment.recipes.RecipesFragment">
+    tools:context=".ui.activity.cooking.CookingActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recipesList"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_recipe" />
+        android:orientation="vertical">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cookingPager" />
+
+    </LinearLayout>
+
 
 </com.valentun.interactiverecipes.ui.view.LoadingLayout>
