@@ -5,5 +5,5 @@ import com.valentun.interactiverecipes.presentation.view.ProgressView
 
 interface CookingView : ProgressView {
     fun showRecipe(recipe: Recipe)
-    fun nextPage()
+    fun nextPage(newSectionPosition: Int)
 }

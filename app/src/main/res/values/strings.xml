@@ -10,4 +10,6 @@
 
     <string name="section_next">Next</string>
     <string name="section_finish">Finish</string>
+
+    <string name="recognition_next">next</string>
 </resources>
